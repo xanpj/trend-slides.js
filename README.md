@@ -13,3 +13,5 @@ That's why with trend-slides.js you create you're presentation in JSON!
 It will then be displayed as an interactive html presentation. Also, you can edit you're JSON in the same window. For this, use the edit button in the bottom-right, click download and replace your content.js file.
 
 This can also be used for automatic report generation.
+
+![Screencast](./docu/capture.gif)
