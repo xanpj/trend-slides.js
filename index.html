@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Presentation</title>
+  <link rel="stylesheet" href="lib/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href=css/style.css>
+</head>
+<body>
+
+
+<div id="main">
+</div>
+
+<button id="edit-button">
+  <svg width="2.5em" height="2.5em" viewBox="0 0 16 16" class="bi bi-pencil" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M11.293 1.293a1 1 0 0 1 1.414 0l2 2a1 1 0 0 1 0 1.414l-9 9a1 1 0 0 1-.39.242l-3 1a1 1 0 0 1-1.266-1.265l1-3a1 1 0 0 1 .242-.391l9-9zM12 2l2 2-9 9-3 1 1-3 9-9z"/>
+  <path fill-rule="evenodd" d="M12.146 6.354l-2.5-2.5.708-.708 2.5 2.5-.707.708zM3 10v.5a.5.5 0 0 0 .5.5H4v.5a.5.5 0 0 0 .5.5H5v.5a.5.5 0 0 0 .5.5H6v-1.5a.5.5 0 0 0-.5-.5H5v-.5a.5.5 0 0 0-.5-.5H3z"/>
+</svg>
+</button>
+
+<div id="edit-page">
+  Title:
+  <input type="text" id="edit-title" />
+  Content:
+  <textarea id="edit-content" class="ce-code__textarea cdx-input" placeholder="Enter a code"></textarea>
+  Author:
+  <input type="text" id="edit-author" />
+  Author Link:
+  <input type="text" id="edit-author-link" />
+  <span>Theme:</span>
+  <fieldset>
+    <input type="radio" name="editor-mode" id="editor-theme-light" value="light">
+    <label for="theme-light">Light</label> 
+    <input type="radio" name="editor-mode" id="editor-theme-dark" value="dark">
+    <label for="theme-dark">Dark</label>
+  </fieldset>
+  <div id="download-section"><a href="#" id="download-link">Download</a> this configuration before closing and replace the content.js file.</div>
+</div>
+
+<div id="scroller">
+  <i class="arrow-down"></i>
+</div>
+
+<footer>
+   <span id="presentation-name"></span> by <a id="author" target="_blank" href="#"></a>
+</footer>
+
+  <script src="lib/prettifier-2.0.5-standalone.js"></script>
+  <script src="lib/prettifier-2.0.5-parser-babel.js"></script>
+  <script src="lib/jquery-3.2.1.js"></script>
+  <script src="lib/jquery.nicescroll.min.js"></script>
+  <script src="content.js"></script>
+  <script src="js/functions.js"></script>
+  <noscript> 
+    You need to enable javascript to use this.
+  </noscript>
+</body>
+</html>
+

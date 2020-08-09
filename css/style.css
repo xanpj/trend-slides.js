@@ -1,0 +1,271 @@
+body{
+  font-size:16px;
+  overflow-y: scroll;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: Poppins;
+}
+
+p{
+  font-family:Roboto;
+}
+
+section {
+  height: 100vh;
+}
+
+textarea, input  {
+  margin: 4px 0;
+  border-radius: 4px;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 6px 10px;
+  border: 1px solid #999;
+  box-sizing: border-box;
+}
+
+button {
+  margin:0;
+  border: none;
+  padding: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+textarea {
+  height: 400px;
+}
+
+/** dark theme **/
+body.dark-mode {
+  color: #fff;
+  background-color: #000;
+}
+.dark-mode #edit-button {
+  color: #222;
+}
+
+.dark-mode #edit-button.active {
+  color: #aaa;
+}
+
+.dark-mode #edit-button svg:hover {
+    color: #fff;
+}
+.dark-mode .arrow-down {
+  border-color: #fff;
+}
+.dark-mode .arrow-up {
+  border-color: #ff0000;
+}
+
+/** END dark theme**/
+
+#scroller {
+  z-index:1;
+  position:fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+#main {
+  overflow:hidden;
+}
+
+#edit-page {
+  width:100%;
+  padding: 40px;
+  display:none;
+}
+
+label {
+    margin-bottom: 0rem;
+}
+
+#edit-page textarea, #edit-page input[type=text] {
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#download-section {
+  margin-top: 15px;
+}
+
+#editorjs {
+  width: 100%;
+  max-width: 100%;
+}
+
+
+.ce-code__textarea {
+    min-height: 200px;
+    font-family: Menlo, Monaco, Consolas, Courier New, monospace;
+    color: #41314e;
+    line-height: 1.6em;
+    font-size: 12px;
+    background: #f8f7fa;
+    border: 1px solid #f1f1f4;
+    box-shadow: none;
+    white-space: pre;
+    word-wrap: normal;
+    overflow-x: auto;
+    resize: vertical;
+}
+
+.cdx-input {
+    border: 1px solid rgba(201,201,204,.48);
+    -webkit-box-shadow: inset 0 1px 2px 0 rgba(35,44,72,.06);
+    box-shadow: inset 0 1px 2px 0 rgba(35,44,72,.06);
+    border-radius: 3px;
+    padding: 10px 12px;
+    outline: none;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#edit-button {
+  z-index:1;
+  position: fixed;
+  color: #EEEEEE;
+  bottom: 0;
+  right: 50px;
+  padding: 15px;
+}
+
+#edit-button.active {
+  color: #555555;
+}
+
+#edit-button svg:hover {
+    color: #000000;
+}
+
+#edit-button svg:hover, 
+#scroller:hover {
+  cursor:pointer;
+}
+
+i {
+   width: 30px;
+   height: 30px;
+   border: solid black;
+   border-width: 0 3px 3px 0;
+   display: inline-block;
+   padding: 3px;
+}
+
+.arrow-down {
+   transform: translateY(0px) rotate(45deg);
+   -webkit-transform: translateY(0px) rotate(45deg);
+   transition: border-color 0.5s;
+   transition: transform 0.5s;
+   border-color: #000;
+}
+
+.arrow-up {
+    transform: translateY(10px) rotate(225deg);
+   -webkit-transform: translateY(10px) rotate(225deg);
+   border-color: #ff0000;
+   transition: border-color 0.5s;
+   transition: transform 0.5s;
+}
+
+.container-custom {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container-custom .row {
+    display:flex;
+    align-items: center;
+}
+
+#heading {
+  height: 100%;
+  padding: 20px;
+  position: relative;
+  display:block;
+  text-align:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#heading h1{
+  font-size: 100px;
+}
+
+
+.navbar{
+  border:0;
+  font-family:Poppins;
+}
+
+.navbar-brand{
+  font-size:20px;
+  color:#000 !important;
+  font-weight:bold;
+}
+
+#showcase h1{
+  font-size:50px;
+  margin-bottom:20px;
+}
+
+.info-left img, .info-right img{
+  text-align:center;
+  width:100%;
+  height: 100%;
+}
+
+.info-left {
+  position: relative;
+  overflow:hidden;
+}
+
+.info-right {
+  position: relative;
+  overflow:hidden;
+}
+
+
+.sub-container {
+  align-items: center;
+}
+
+.info-left .info-inner, .info-right .info-inner{
+  font-size: 30px;
+}
+
+.info-left .info-inner{
+  text-align: left;
+}
+.info-right .info-inner{
+  text-align: right;
+}
+
+
+.info-left .info-inner p, .info-right .info-inner p{
+  font-size: 20px;
+}
+
+
+footer{
+  z-index:0;
+  display:none;
+  padding:30px;
+  /*transform: translateY(-70px);*/
+}
+
+footer.last-slide {
+  transform: translateY(-70px);
+}
